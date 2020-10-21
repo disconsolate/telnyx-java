@@ -15,21 +15,21 @@ jdk:
   - openjdk9
   - openjdk8
 
-#before_cache:
-#  - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
-#  - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
+before_cache:
+  - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
+  - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
 
 cache:
   directories:
-    - $HOME/.m2
-#    - $HOME/.gradle/wrapper/
+    - $HOME/.gradle/caches/
+    - $HOME/.gradle/wrapper/
 
 before_install:
   # ensure gradlew has proper permission
-  - chmod a+x ./mvnw
+  - chmod a+x ./gradlew
 
 install:
-  - ./mvnw clean install
+  - ./gradlew clean install
 
 #script:
   # test using maven
