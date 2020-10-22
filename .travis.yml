@@ -32,11 +32,11 @@ before_install:
 install:
   - ./gradlew clean install
 
-#script:
+script:
   # test using maven
   #- mvn test
   # test using gradle
-#  - gradle test
+  - ./gradlew test
 #  - gradle install
   # test using sbt
   # - sbt test
