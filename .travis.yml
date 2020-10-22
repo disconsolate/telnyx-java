@@ -33,14 +33,14 @@ install:
   - ./gradlew clean build test
   - ./gradlew install
 
-script:
+#script:
   # test using maven
   #- mvn test
   # test using gradle
-  - ./gradlew test
+#  - ./gradlew test
 #  - gradle install
   # test using sbt
   # - sbt test
 
-after_success:
-  - ./gradlew cobertura coveralls
+#after_success:
+#  - ./gradlew cobertura coveralls
