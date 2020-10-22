@@ -6,16 +6,17 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:2.3.+'
         classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
-        classpath 'net.saliman:gradle-cobertura-plugin:3.0.0'
+//        classpath 'net.saliman:gradle-cobertura-plugin:3.0.0'
         classpath 'org.kt3k.gradle.plugin:coveralls-gradle-plugin:2.8.3'
     }
 }
 
 apply plugin: 'idea'
 apply plugin: 'eclipse'
-apply plugin: 'net.saliman.cobertura'
+//apply plugin: 'net.saliman.cobertura'
+apply plugin: 'jacoco'
 apply plugin: 'com.github.kt3k.coveralls'
-cobertura.coverageFormats = ['html', 'xml'] // coveralls plugin depends on xml format report
+//cobertura.coverageFormats = ['html', 'xml'] // coveralls plugin depends on xml format report
 
 group = 'com.telnyx.sdk'
 version = '2.0.5-alpha'
