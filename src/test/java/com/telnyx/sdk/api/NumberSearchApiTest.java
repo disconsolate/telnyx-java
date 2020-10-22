@@ -77,26 +77,26 @@ public class NumberSearchApiTest {
         // TODO: test validations
     }
 
-//    @Test
-//    public void search_for_phone_numbers_in_the_us() {
-//        //given
-//        NumberSearchApi apiInstance = new NumberSearchApi(Configuration.getDefaultApiClient());
-//        String countryCode = "US";
-//        ListAvailablePhoneNumbersResponse response = null;
-//
-//        //when
-//        try {
-//            response = apiInstance.listAvailablePhoneNumbers()
-//                    .filterCountryCode(countryCode)
-//                    .execute();
-//        } catch (Exception e) {
-//            assert false;
-//        }
-//
-//        //then
-//        assert response != null;
-//        assert !response.getData().isEmpty();
-//    }
+    @Test
+    public void search_for_phone_numbers_in_the_us() {
+        //given
+        NumberSearchApi apiInstance = new NumberSearchApi(Configuration.getDefaultApiClient());
+        String countryCode = "US";
+        ListAvailablePhoneNumbersResponse response = null;
+
+        //when
+        try {
+            response = apiInstance.listAvailablePhoneNumbers()
+                    .filterCountryCode(countryCode)
+                    .execute();
+        } catch (Exception e) {
+            assert false;
+        }
+
+        //then
+        assert response != null;
+        assert !response.getData().isEmpty();
+    }
 
 
 }
