@@ -42,5 +42,5 @@ install:
   # - sbt test
 
 after_success:
-  - ./gradlew jacocoRootReport coveralls
+  - ./gradlew jacocoTestReport coveralls
 #  - ./gradlew cobertura coveralls
