@@ -30,8 +30,7 @@ before_install:
   - chmod a+x ./gradlew
 
 install:
-  - ./gradlew clean build test
-  - ./gradlew install
+  - ./gradlew clean build test install
 
 #script:
   # test using maven
@@ -42,5 +41,5 @@ install:
   # test using sbt
   # - sbt test
 
-#after_success:
-#  - ./gradlew cobertura coveralls
+after_success:
+  - ./gradlew cobertura coveralls
