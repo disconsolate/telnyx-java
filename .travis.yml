@@ -30,7 +30,8 @@ before_install:
   - chmod a+x ./gradlew
 
 install:
-  - ./gradlew clean install
+  - ./gradlew clean build test
+  - ./gradlew install
 
 script:
   # test using maven
