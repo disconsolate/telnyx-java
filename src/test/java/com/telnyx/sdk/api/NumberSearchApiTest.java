@@ -80,7 +80,11 @@ public class NumberSearchApiTest {
 //    @Test
 //    public void search_for_phone_numbers_in_the_us() {
 //        //given
-//        NumberSearchApi apiInstance = new NumberSearchApi(Configuration.getDefaultApiClient());
+//        ApiClient defaultClient = Configuration.getDefaultApiClient();
+//        HttpBearerAuth bearerAuth = (HttpBearerAuth) defaultClient.getAuthentication("bearerAuth");
+//        bearerAuth.setBearerToken("KEY0174D6AB1C6DCF691F56EAE3F46C2D93_7LRRZM2E3cQ17pTqWzMmzT");
+//
+//        NumberSearchApi apiInstance = new NumberSearchApi();
 //        String countryCode = "US";
 //        ListAvailablePhoneNumbersResponse response = null;
 //
