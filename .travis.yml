@@ -8,6 +8,10 @@ sudo: false
 dist: xenial
 language: java
 
+env:
+  global:
+    - TELNYX_MOCK_VERSION=0.8.10
+
 jdk:
   - openjdk12
   - openjdk11
